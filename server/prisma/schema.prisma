@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int              @id @default(autoincrement())
+  name        String
+  slug        String           @unique
+  brand       String
+  category    String           @default("Smartphones")
+  description String?
+  variants    ProductVariant[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model ProductVariant {
+  id        Int       @id @default(autoincrement())
+  productId Int
+  product   Product   @relation(fields: [productId], references: [id], onDelete: Cascade)
+  name      String
+  storage   String
+  color     String
+  colorHex  String
+  price     Int
+  mrp       Int
+  imageUrl  String
+  images    String[]  @default([])
+  slug      String    @unique
+  inStock   Boolean   @default(true)
+  emiPlans  EMIPlan[]
+  createdAt DateTime  @default(now())
+}
+
+model EMIPlan {
+  id            Int            @id @default(autoincrement())
+  variantId     Int
+  variant       ProductVariant @relation(fields: [variantId], references: [id], onDelete: Cascade)
+  tenure        Int
+  monthlyAmount Int
+  interestRate  Float
+  totalAmount   Int
+  cashback      Int            @default(7500)
+  isNoCost      Boolean        @default(false)
+  createdAt     DateTime       @default(now())
+}
+
+model Order {
+  id              Int      @id @default(autoincrement())
+  orderNumber     String   @unique
+  status          String   @default("confirmed")
+
+  // customer info
+  customerName    String
+  customerEmail   String
+  customerPhone   String
+  shippingAddress String
+
+  // snapshot of what they bought (so we dont lose it if product gets deleted)
+  productName     String
+  productBrand    String
+  variantColor    String
+  variantStorage  String
+  variantImageUrl String
+  productPrice    Int
+  productMrp      Int
+
+  // emi stuff
+  emiTenure       Int
+  emiMonthlyAmount Int
+  emiInterestRate Float
+  emiTotalAmount  Int
+  emiCashback     Int      @default(0)
+  emiIsNoCost     Boolean  @default(false)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
