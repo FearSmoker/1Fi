@@ -1,4 +1,6 @@
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+let rawBase = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
+rawBase = rawBase.replace(/\/+$/, '');
+const API_BASE = rawBase.endsWith('/api') ? rawBase : `${rawBase}/api`;
 
 export async function fetchProducts(category) {
   const url = category
