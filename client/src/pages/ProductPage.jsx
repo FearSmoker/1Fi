@@ -311,21 +311,45 @@ export default function ProductPage() {
                 <p className="text-sm text-gray-600">Dispatch in less than 48 hours and delivery in 3-7 working days after dispatch</p>
               </div>
 
-              {/* Confidence badges */}
+              {/* badges */}
               <div className="mt-6">
                 <h3 className="text-base font-bold text-gray-900 mb-3">Shop with Confidence</h3>
-                <div className="grid grid-cols-2 gap-3">
-                  {[
-                    ['🔄', '7 Days Replacement'],
-                    ['⭐', 'Top Brand'],
-                    ['🚚', 'Free Delivery'],
-                    ['🔒', 'Secure Transaction'],
-                  ].map(([icon, text]) => (
-                    <div key={text} className="flex items-center gap-2">
-                      <span className="text-primary-600">{icon}</span>
-                      <span className="text-sm text-primary-700 font-medium">{text}</span>
-                    </div>
-                  ))}
+                <div className="grid grid-cols-2 gap-y-3.5 gap-x-4">
+                  <div className="flex items-center gap-2.5">
+                    <svg className="w-5 h-5 flex-shrink-0 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M3 12a9 9 0 0 1 15.5-6.36L21 8" />
+                      <polyline points="21 3 21 8 16 8" />
+                      <path d="M21 12a9 9 0 0 1-15.5 6.36L3 16" />
+                      <polyline points="3 21 3 16 8 16" />
+                      <path d="M12 9l3 1.7v3.5L12 16l-3-1.8v-3.5L12 9z" />
+                    </svg>
+                    <span className="text-sm text-primary-800 font-medium">2 Days Service Centre Replacement</span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <svg className="w-5 h-5 flex-shrink-0 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 15l2-7 4.5 3.5 4.5-3.5 2 7H4z" />
+                      <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                    <span className="text-sm text-primary-800 font-medium">Top Brand</span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <svg className="w-5 h-5 flex-shrink-0 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="1" y="5" width="13" height="11" rx="1" />
+                      <path d="M14 8h4l3 3v5h-7V8z" />
+                      <circle cx="5.5" cy="18.5" r="2.5" />
+                      <circle cx="17.5" cy="18.5" r="2.5" />
+                      <polyline points="5 10 7 12 10 9" />
+                    </svg>
+                    <span className="text-sm text-primary-800 font-medium">Free Delivery</span>
+                  </div>
+                  <div className="flex items-center gap-2.5">
+                    <svg className="w-5 h-5 flex-shrink-0 text-primary-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                      <rect x="4" y="10" width="16" height="11" rx="2" />
+                      <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                      <circle cx="12" cy="15.5" r="1.5" />
+                    </svg>
+                    <span className="text-sm text-primary-800 font-medium">Secure Transaction</span>
+                  </div>
                 </div>
               </div>
 
