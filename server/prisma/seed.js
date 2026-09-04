@@ -30,8 +30,8 @@ const IMG = {
   // phones
   iphone_silver:   [`${CDN}/smartphones/iphone-13-pro/1.webp`, `${CDN}/smartphones/iphone-13-pro/2.webp`, `${CDN}/smartphones/iphone-13-pro/3.webp`],
   iphone_black:    [`${CDN}/smartphones/iphone-x/1.webp`, `${CDN}/smartphones/iphone-x/2.webp`, `${CDN}/smartphones/iphone-x/3.webp`],
-  samsung_black:   [`${CDN}/smartphones/iphone-5s/1.webp`, `${CDN}/smartphones/iphone-5s/2.webp`, `${CDN}/smartphones/iphone-5s/3.webp`],
-  samsung_gray:    [`${CDN}/smartphones/iphone-6/1.webp`, `${CDN}/smartphones/iphone-6/2.webp`, `${CDN}/smartphones/iphone-6/3.webp`],
+  samsung_black:   [`${CDN}/smartphones/samsung-galaxy-s10/1.webp`, `${CDN}/smartphones/samsung-galaxy-s10/2.webp`, `${CDN}/smartphones/samsung-galaxy-s10/3.webp`],
+  samsung_gray:    [`${CDN}/smartphones/samsung-galaxy-s8/1.webp`, `${CDN}/smartphones/samsung-galaxy-s8/2.webp`, `${CDN}/smartphones/samsung-galaxy-s8/3.webp`],
   oneplus_ocean:   [`${CDN}/smartphones/oppo-f19-pro-plus/1.webp`, `${CDN}/smartphones/oppo-f19-pro-plus/2.webp`, `${CDN}/smartphones/oppo-f19-pro-plus/3.webp`],
   oneplus_dawn:    [`${CDN}/smartphones/oppo-a57/1.webp`, `${CDN}/smartphones/oppo-a57/2.webp`, `${CDN}/smartphones/oppo-a57/3.webp`],
   pixel_obsidian:  [`${CDN}/smartphones/realme-c35/1.webp`, `${CDN}/smartphones/realme-c35/2.webp`, `${CDN}/smartphones/realme-c35/3.webp`],
@@ -43,17 +43,17 @@ const IMG = {
 
   // laptops
   macbook_black:   [`${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/1.webp`, `${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/2.webp`, `${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/3.webp`],
-  macbook_silver:  [`${CDN}/laptops/huawei-matebook-x-pro/1.webp`, `${CDN}/laptops/huawei-matebook-x-pro/2.webp`, `${CDN}/laptops/huawei-matebook-x-pro/3.webp`],
+  macbook_silver:  [`${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/2.webp`, `${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/1.webp`, `${CDN}/laptops/apple-macbook-pro-14-inch-space-grey/3.webp`],
   dell_silver:     [`${CDN}/laptops/new-dell-xps-13-9300-laptop/1.webp`, `${CDN}/laptops/new-dell-xps-13-9300-laptop/2.webp`, `${CDN}/laptops/new-dell-xps-13-9300-laptop/3.webp`],
-  dell_white:      [`${CDN}/laptops/lenovo-yoga-920/1.webp`, `${CDN}/laptops/lenovo-yoga-920/2.webp`, `${CDN}/laptops/lenovo-yoga-920/3.webp`],
+  dell_white:      [`${CDN}/laptops/new-dell-xps-13-9300-laptop/2.webp`, `${CDN}/laptops/new-dell-xps-13-9300-laptop/1.webp`, `${CDN}/laptops/new-dell-xps-13-9300-laptop/3.webp`],
 
   // audio
-  sony_black:      [`${CDN}/mobile-accessories/apple-airpods-max-silver/1.webp`, `${CDN}/mobile-accessories/apple-airpods/1.webp`, `${CDN}/mobile-accessories/apple-airpods/2.webp`],
-  sony_silver:     [`${CDN}/mobile-accessories/apple-airpods/1.webp`, `${CDN}/mobile-accessories/apple-airpods/3.webp`, `${CDN}/mobile-accessories/apple-airpods/2.webp`],
+  sony_black:      ['/images/products/sony_black_1.jpg', '/images/products/sony_black_2.jpg', '/images/products/sony_black_3.jpg'],
+  sony_silver:     ['/images/products/sony_silver_1.jpg', '/images/products/sony_silver_2.jpg', '/images/products/sony_silver_3.jpg'],
 
   // tablets
-  ipad_black:      [`${CDN}/tablets/ipad-mini-2021-starlight/1.webp`, `${CDN}/tablets/ipad-mini-2021-starlight/2.webp`, `${CDN}/tablets/ipad-mini-2021-starlight/3.webp`],
-  ipad_silver:     [`${CDN}/tablets/samsung-galaxy-tab-white/1.webp`, `${CDN}/tablets/samsung-galaxy-tab-white/2.webp`, `${CDN}/tablets/samsung-galaxy-tab-white/3.webp`],
+  ipad_black:      ['/images/products/ipad_black_1.jpg', '/images/products/ipad_black_2.jpg', '/images/products/ipad_black_3.jpg'],
+  ipad_silver:     ['/images/products/ipad_silver_1.jpg', '/images/products/ipad_silver_2.jpg', '/images/products/ipad_silver_3.jpg'],
 };
 
 const products = [
